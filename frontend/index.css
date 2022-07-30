@@ -10,11 +10,6 @@ body{
     background-color: #f1f5f8;
 }
 
-.home-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .heading{
     text-align: center;
     margin-top: 30px;

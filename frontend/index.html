@@ -9,16 +9,43 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
+<style>
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    .card{
+        padding: 30px;
+        margin:10px;
+        background: #fafafa;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width:400px;
+        text-align: center;
+    }
+</style>
+
 <body>
 
-    <div class="home-center">
-        <!-- <h2>Topics:-</h2> -->
-        <ul>
-            <li><a href="crop.html">Crop Prediction</a></li>
-            <li><a href="#">Water Quality Prediction</a></li>
-            <li><a href="#">Lung Cancer Prediction</a></li>
-        </ul>
-    </div>
+    <h2 class="heading">Topics</h2>
+
+    <main>
+        
+        <div class="home-center">
+            <div class="card">
+                <a href="crop.html">Crop Prediction</a>
+            </div>
+            <div class="card">
+                <a href="#">Lung Cancer Prediction</a>
+            </div>
+            <div class="card">
+                <a href="#">Water Potable Prediction</a>
+            </div>
+        </div>
+
+    </main>
 </body>
 
 </html>
