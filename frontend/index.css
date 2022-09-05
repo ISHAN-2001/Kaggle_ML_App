@@ -52,3 +52,12 @@ input:focus{
 .result p{
     text-align: center;
 }
+label:hover { cursor: pointer; }
+.form1{
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+}
+.btn:hover{
+    cursor: pointer;
+}

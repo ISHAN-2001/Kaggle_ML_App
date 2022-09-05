@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Water Potability Test</title>
+</head>
+<body>
+    <h2 class="heading">Water Potability</h2>
+    <main>
+        <form name="#" id="form" method="post" class="form">
+
+            <div class="inputs">
+                <input type="number" name="ph" id="ph" placeholder="Enter pH value" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="hard" id="hard" placeholder="Enter hardness(mg/L)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="solids" id="solids" placeholder="Enter solids in water(ppm)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="amines" id="amines" placeholder="Enter amines(mg/L)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="sulphur" id="sulphut" placeholder="Enter sulphur(mg/L)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="conductivity" id="conductivity" placeholder="Enter conductivity(S/m)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="carbon" id="carbon" placeholder="Enter carbon(mg/L)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="methane" id="methane" placeholder="Enter methane(mg/L)" required>
+            </div>
+            <div class="inputs">
+                <input type="number" name="turbiduty" id="turbidity" placeholder="Enter turbidity(NTU)" required>
+            </div>
+            <div class="inputs">
+                <input type="submit" value="submit" class="btn">
+            </div>
+        </form>
+
+    </main>
+    
+    <div class="result">
+        <p id="ans" ></p>
+    </div>
+    <script src="water.js"></script>
+</body>
+</html>

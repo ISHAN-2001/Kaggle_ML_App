@@ -80,7 +80,7 @@ def water():
     input = [ph,hard,solids,amines,sulphur,conductivity,carbon,methane,turbidity]
 
     ans = water_model.predict([input])[0]
-
+    print(ans)
     ans = 'HIGH' if input==1 else 'LOW'
 
     return jsonify({"ans":ans})
@@ -95,26 +95,28 @@ def lung():
     print(record)
 
 
-    AGE=record['age']
-    SMOKING=record['smoke']
-    YELLOW_FINGERS=record['yellow']
-    ANXIETY=record['anxiety']
-    PEER_PRESSURE=record['peer']
-    CHRONIC=record['chronic']
-    FATIGUE=record['fatigue']
-    ALLERGY=record['allergy']
-    WHEEZING=record['wheeze']
-    ALCOHOL=record['alcohol']
-    COUGH=record['cough']
-    BREATH=record['breath']
-    SWALLOW=record['swallow']
-    CHEST=record['chest']
-    GENDER=record['gender']
+    age=record['age']
+    smoking=record['smoke']
+    yellow_fingers=record['yellow']
+    anxiety=record['anxiety']
+    peer_pressure=record['peer']
+    chronic=record['chronic']
+    fatigue=record['fatigue']
+    allergy=record['allergy']
+    wheezing=record['wheeze']
+    alcohol=record['alcohol']
+    cough=record['cough']
+    breath=record['breath']
+    swallow=record['swallow']
+    chest=record['chest']
+    gender=record['gender']
 
-    res =[AGE,SMOKING,YELLOW_FINGERS,ANXIETY,PEER_PRESSURE,CHRONIC,FATIGUE,ALLERGY,WHEEZING,ALCOHOL,COUGH,BREATH,SWALLOW,CHEST,GENDER]
+    res =[age,smoking,yellow_fingers,anxiety,peer_pressure,chronic,fatigue,allergy,wheezing,alcohol,cough,breath,swallow,chest,gender]
     ans = lung_model.predict([res])[0]
 
-    ans=  'YES' if ans==1 else 'NO'
+    print(ans)
+
+    ans=  'High posibility of cancer' if ans==1 else 'Low Possibility of cancer'
 
     return jsonify({"ans":ans})
 
