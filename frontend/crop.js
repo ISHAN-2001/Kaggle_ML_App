@@ -6,6 +6,8 @@ var obj = {}
 
 form.addEventListener("submit", e => {
     e.preventDefault();
+
+    document.getElementById("ans").innerHTML = "Loading... Please Wait.."
     n = document.getElementById("n").value;
     p = document.getElementById("p").value;
     k = document.getElementById("k").value;

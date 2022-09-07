@@ -116,7 +116,7 @@ def lung():
 
     print(ans)
 
-    ans=  'High posibility of cancer' if ans==1 else 'Low Possibility of cancer'
+    ans=  'High' if ans==1 else 'Low'
 
     return jsonify({"ans":ans})
 

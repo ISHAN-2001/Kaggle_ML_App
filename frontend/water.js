@@ -6,6 +6,8 @@ var obj = {}
 
 form.addEventListener("submit", e => {
     e.preventDefault();
+
+    document.getElementById("ans").innerHTML = "Loading Please Wait..."
     ph = document.getElementById("ph").value;
     hard = document.getElementById("hard").value;
     solids = document.getElementById("solids").value;
@@ -13,7 +15,8 @@ form.addEventListener("submit", e => {
     sulphur = document.getElementById("sulphur").value;
     conductivity = document.getElementById("conductivity").value;
     carbon = document.getElementById("carbon").value;
-    turbidity = document.getElementById("methane").value;
+    methane = document.getElementById("methane").value;
+    turbidity = document.getElementById("turbidity").value;
     //console.log(n,p,k,hum,temp,rain,ph);
 
     //console.log(typeof(n))
@@ -21,11 +24,12 @@ form.addEventListener("submit", e => {
     obj.ph = parseInt(ph)
     obj.hard = parseInt(hard)
     obj.solids = parseInt(solids)
-    obj.amines = parseInt(sulphur)
+    obj.amines = parseInt(amines)
+    obj.sulphur = parseInt(sulphur)
     obj.conductivity = parseInt(conductivity)
     obj.carbon = parseInt(carbon)
     obj.methane = parseInt(methane)
-    obj.turbidity = parseInt(turbiduty)
+    obj.turbidity = parseInt(turbidity)
     //console.log(JSON.stringify(obj))
 
     //fetchdata()
@@ -47,7 +51,7 @@ form.addEventListener("submit", e => {
             .then(res => res.json())
             .then((data) => {
                 console.log(data)
-                str = `The recommended crop is ${data.ans}`
+                str = `Water Contamination level is ${data.ans}`
                 document.getElementById("ans").innerHTML = str
             })
             .catch(err => {
