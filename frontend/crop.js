@@ -67,23 +67,3 @@ form.addEventListener("submit", e => {
     }
 
 });
-
-/* async function fetchdata() {
-     
-    console.log(obj)
-    
-    const res = await fetch('http://localhost:3000/crop', {
-          method: 'POST',
-          body: JSON.stringify(obj),
-          headers: {
-              'Content-type': 'application/json'
-          },
-          mode : 'no-cors'
-    });
-    const result = await res.json()
-    plant = result
-    console.log(plant)
-    str = `The recommended crop is ${plant}`
-    document.getElementById(ans).innerHTML = str
-  } 
- */

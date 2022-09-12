@@ -81,7 +81,7 @@ def water():
 
     ans = water_model.predict([input])[0]
     print(ans)
-    ans = 'HIGH' if input==1 else 'LOW'
+    ans = 'HIGH' if ans==1 else 'LOW'
 
     return jsonify({"ans":ans})
 
